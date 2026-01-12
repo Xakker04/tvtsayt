@@ -308,7 +308,7 @@ body {
 /* HERO */
 .hero {
     height: 100vh;
-    background: url("88f6f3fc-6ca6-42c7-91ff-9fb57b7645f4.png") center/cover no-repeat;
+    background: url("https://iccsi.com.ar/wp-content/uploads/que-deberian-hacer-los-estudiantes-para-garantizar-que-la-ia-no-anule-sino-que-mejore-su-capacidad-de-aprender-a-traves-de-la-investigacion-2.webp") center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,3 +368,4 @@ body {
 .accordion-item.active .accordion-content {
     padding: 15px 20px;
 }
+
