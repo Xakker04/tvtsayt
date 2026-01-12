@@ -1,3 +1,9 @@
+const navToggle = document.getElementById("nav-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
 // Accordion
 const accordionItems = document.querySelectorAll('.accordion-item');
 
@@ -21,3 +27,4 @@ const navMenu = document.getElementById('nav-menu');
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle('active'); // CSS bilan mos
 });
+
