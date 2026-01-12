@@ -5,18 +5,21 @@ navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 // Accordion
-const accordionItems = document.querySelectorAll('.accordion-item');
+// ===== ACCORDION (FIXED) =====
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".accordion-header").forEach(header => {
+        header.addEventListener("click", () => {
+            const item = header.closest(".accordion-item");
+            const content = item.querySelector(".accordion-content");
 
-accordionItems.forEach(item => {
-    const header = item.querySelector('.accordion-header');
-    header.addEventListener('click', () => {
-        item.classList.toggle('active');
-        const content = item.querySelector('.accordion-content');
-        if (item.classList.contains('active')) {
-            content.style.maxHeight = content.scrollHeight + "px";
-        } else {
-            content.style.maxHeight = null;
-        }
+            item.classList.toggle("active");
+
+            if (item.classList.contains("active")) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
     });
 });
 
@@ -41,5 +44,6 @@ document.querySelectorAll(".accordion-header").forEach(header => {
         }
     });
 });
+
 
 
