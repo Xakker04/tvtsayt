@@ -336,3 +336,35 @@ body {
     font-size: 1.3rem;
     margin-top: 10px;
 }
+/* ACCORDION */
+.accordion-container {
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.accordion-item {
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    background: #3498db;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+}
+
+.accordion-item.active .accordion-content {
+    padding: 15px 20px;
+}
